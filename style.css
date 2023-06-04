@@ -4,6 +4,16 @@
 }
 body {
   background-color: rgb(176, 243, 176);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 .header {
   display: flex;
@@ -102,8 +112,8 @@ button {
 }
 
 .night-mode {
-  background-color: #333; /* night mode background */
-  color: #f0f0f0; /* night mode text color */
+  background-color: #333;
+  color: #f0f0f0; 
 }
 #temperature-controller {
   padding: 5px;
@@ -115,11 +125,25 @@ button {
   background-color: rgb(176, 243, 176);
 }
 .footer {
-    background-color:rgb(81, 187, 249);
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left:0;
-    text-align: center;
-    font-family: fantasy;
+  background-color: #f8f8f8;
+  padding: 5px;
+  text-align: center;
+  color:black;
+}
+
+.footer--name {
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footer--name:hover {
+  text-decoration: underline;
+}
+
+.footer--copyright {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 12px;
+  color: #777;
 }
