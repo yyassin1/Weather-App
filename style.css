@@ -11,6 +11,11 @@ body {
   margin: 0;
   padding: 0;
 }
+.container{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 .header {
   display: flex;
   justify-content: space-between;
@@ -19,8 +24,15 @@ body {
   padding: 20px;
 }
 @media (max-width:768px) {
-  .header {
-
+  #Left-header {
+    font-size: 18px;
+  }
+  #Right-header {
+    font-size: 22px;
+  }
+  #mode-toggle{
+  padding: 5px 10px;
+  font-size: 12px;
   }
 }
 .add-location {
